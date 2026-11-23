@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -200,12 +201,19 @@ a {
     box-shadow: 0 7px 15px #173c2930;
 }
 
+.main-btn:disabled,
+.google-btn:disabled {
+    opacity: .6;
+    cursor: wait;
+}
+
 .divider {
     display: flex;
     align-items: center;
     gap: 12px;
     margin: 17px 0;
     color: #555;
+    width: 100%;
 }
 
 .divider::before,
@@ -230,9 +238,7 @@ a {
     font-size: 22px;
     font-weight: bold;
     margin-right: 10px;
-    background: conic-gradient(#4285f4 0 25%,#34a853 25% 50%,#fbbc05 50% 75%,#ea4335 75%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #4285f4;
 }
 
 .bottom-text {
@@ -346,8 +352,6 @@ a {
 
 <div class="container">
 
-<!-- LOGIN PAGE -->
-
 <section class="phone login" id="login">
 
     <div class="logo">
@@ -370,7 +374,8 @@ a {
             <span class="icon">🔒</span>
             <input type="password" id="loginPassword"
             placeholder="Password" required>
-            <span class="eye" onclick="togglePassword('loginPassword',this)">◉</span>
+            <span class="eye"
+            onclick="togglePassword('loginPassword',this)">◉</span>
         </div>
 
         <div class="options">
@@ -382,7 +387,7 @@ a {
             <a onclick="forgotPassword()">Forgot Password?</a>
         </div>
 
-        <button class="main-btn" type="submit">
+        <button class="main-btn" id="loginButton" type="submit">
             Log In &nbsp; →
         </button>
 
@@ -403,8 +408,6 @@ a {
     <div class="decoration"></div>
 
 </section>
-
-<!-- SIGN UP PAGE -->
 
 <section class="phone signup" id="signup">
 
@@ -439,17 +442,19 @@ a {
             <span class="icon">🔒</span>
             <input type="password" id="signupPassword"
             placeholder="Password" required minlength="6">
-            <span class="eye" onclick="togglePassword('signupPassword',this)">◉</span>
+            <span class="eye"
+            onclick="togglePassword('signupPassword',this)">◉</span>
         </div>
 
         <div class="input-box">
             <span class="icon">🔒</span>
             <input type="password" id="confirmPassword"
             placeholder="Confirm Password" required minlength="6">
-            <span class="eye" onclick="togglePassword('confirmPassword',this)">◉</span>
+            <span class="eye"
+            onclick="togglePassword('confirmPassword',this)">◉</span>
         </div>
 
-        <button class="main-btn" type="submit">
+        <button class="main-btn" id="signupButton" type="submit">
             Sign Up &nbsp; →
         </button>
 
@@ -474,9 +479,6 @@ a {
 </div>
 
 <script>
-
-// SWITCH PAGES
-
 function showSignup() {
     document.getElementById("login").style.display = "none";
     document.getElementById("signup").style.display = "flex";
@@ -487,10 +489,8 @@ function showLogin() {
     document.getElementById("login").style.display = "flex";
 }
 
-// SHOW / HIDE PASSWORD
-
 function togglePassword(id, element) {
-    let input = document.getElementById(id);
+    const input = document.getElementById(id);
 
     if (input.type === "password") {
         input.type = "text";
@@ -500,37 +500,30 @@ function togglePassword(id, element) {
         element.textContent = "◉";
     }
 }
-
-// GOOGLE - NOT CONNECTED YET
-
-function googleLogin() {
-    alert("Google sign-in is not connected yet.");
-}
-
 </script>
 
 <script type="module">
 
-import { initializeApp } from
-"https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js";
+import {
+    initializeApp
+} from "https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js";
 
 import {
     getAuth,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     sendPasswordResetEmail,
-    updateProfile
-} from
-"https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js";
+    updateProfile,
+    GoogleAuthProvider,
+    signInWithPopup
+} from "https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js";
 
 import {
     getDatabase,
     ref,
+    set,
     onValue
-} from
-"https://www.gstatic.com/firebasejs/13.4.0/firebase-database.js";
-
-// FIREBASE CONFIGURATION
+} from "https://www.gstatic.com/firebasejs/13.4.0/firebase-database.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAF7VTwMd9AX98Qj_g2OcUmiJKZkvNU6jE",
@@ -546,10 +539,16 @@ const firebaseConfig = {
 // INITIALIZE FIREBASE
 
 const app = initializeApp(firebaseConfig);
-
 const auth = getAuth(app);
-
 const database = getDatabase(app);
+
+// GOOGLE PROVIDER
+
+const googleProvider = new GoogleAuthProvider();
+
+googleProvider.setCustomParameters({
+    prompt: "select_account"
+});
 
 // DATABASE CONNECTION CHECK
 
@@ -558,10 +557,28 @@ const connectedRef = ref(database, ".info/connected");
 onValue(connectedRef, (snapshot) => {
     console.log(
         snapshot.val()
-        ? "Firebase Connected!"
-        : "Firebase Disconnected!"
+        ? "Firebase Database Connected!"
+        : "Firebase Database Disconnected!"
     );
 });
+
+// SAVE USER PROFILE
+
+async function saveUserProfile(user, name = "") {
+
+    const profileRef = ref(
+        database,
+        "users/" + user.uid + "/profile"
+    );
+
+    await set(profileRef, {
+        name: name || user.displayName || "",
+        email: user.email || "",
+        uid: user.uid,
+        updatedAt: Date.now()
+    });
+
+}
 
 // SIGN UP
 
@@ -569,18 +586,20 @@ window.signupUser = async function(event) {
 
     event.preventDefault();
 
+    const button = document.getElementById("signupButton");
+
     const name = document.getElementById("signupName").value.trim();
-
     const email = document.getElementById("signupEmail").value.trim();
-
     const password = document.getElementById("signupPassword").value;
-
     const confirm = document.getElementById("confirmPassword").value;
 
     if (password !== confirm) {
         alert("Passwords do not match!");
         return;
     }
+
+    button.disabled = true;
+    button.textContent = "Creating account...";
 
     try {
 
@@ -594,26 +613,32 @@ window.signupUser = async function(event) {
             displayName: name
         });
 
+        await saveUserProfile(result.user, name);
+
         alert("Your account has been created successfully!");
 
         document.getElementById("signupPassword").value = "";
         document.getElementById("confirmPassword").value = "";
 
-        window.showLogin();
+        showLogin();
 
     } catch (error) {
 
-        console.error(error);
+        console.error("Sign Up Error:", error);
 
         if (error.code === "auth/email-already-in-use") {
-            alert("This email is already registered.");
+            alert("This email is already registered. Please Log In.");
         } else if (error.code === "auth/weak-password") {
             alert("Password must be at least 6 characters.");
         } else {
             alert("Sign Up Error: " + error.message);
         }
 
+    } finally {
+        button.disabled = false;
+        button.textContent = "Sign Up →";
     }
+
 };
 
 // LOGIN
@@ -622,9 +647,13 @@ window.loginUser = async function(event) {
 
     event.preventDefault();
 
-    const email = document.getElementById("loginEmail").value.trim();
+    const button = document.getElementById("loginButton");
 
+    const email = document.getElementById("loginEmail").value.trim();
     const password = document.getElementById("loginPassword").value;
+
+    button.disabled = true;
+    button.textContent = "Logging in...";
 
     try {
 
@@ -634,21 +663,67 @@ window.loginUser = async function(event) {
             password
         );
 
+        await saveUserProfile(result.user);
+
         alert("Welcome to Energy Watch!");
 
         console.log("Logged in user:", result.user.uid);
 
     } catch (error) {
 
-        console.error(error);
+        console.error("Login Error:", error);
 
-        if (error.code === "auth/invalid-credential") {
+        if (
+            error.code === "auth/invalid-credential" ||
+            error.code === "auth/wrong-password" ||
+            error.code === "auth/user-not-found"
+        ) {
             alert("Incorrect email or password.");
         } else {
             alert("Login Error: " + error.message);
         }
 
+    } finally {
+        button.disabled = false;
+        button.textContent = "Log In →";
     }
+
+};
+
+// GOOGLE LOGIN
+
+window.googleLogin = async function() {
+
+    try {
+
+        const result = await signInWithPopup(
+            auth,
+            googleProvider
+        );
+
+        await saveUserProfile(result.user);
+
+        alert(
+            "Welcome to Energy Watch, " +
+            (result.user.displayName || "User") + "!"
+        );
+
+        console.log("Google Login Successful:", result.user.uid);
+
+    } catch (error) {
+
+        console.error("Google Login Error:", error);
+
+        if (error.code === "auth/popup-closed-by-user") {
+            alert("Google sign-in was cancelled.");
+        } else if (error.code === "auth/unauthorized-domain") {
+            alert("This website domain is not authorized in Firebase.");
+        } else {
+            alert("Google Login Error: " + error.message);
+        }
+
+    }
+
 };
 
 // FORGOT PASSWORD
@@ -670,11 +745,12 @@ window.forgotPassword = async function() {
 
     } catch (error) {
 
-        console.error(error);
+        console.error("Password Reset Error:", error);
 
-        alert("Reset Password Error: " + error.message);
+        alert("Password Reset Error: " + error.message);
 
     }
+
 };
 
 </script>

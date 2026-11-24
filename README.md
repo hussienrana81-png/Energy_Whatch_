@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,16 +34,10 @@ button, input, select {
     font: inherit;
 }
 
-button {
-    cursor: pointer;
-}
-
-.hidden {
-    display: none !important;
-}
+button { cursor: pointer; }
+.hidden { display: none !important; }
 
 /* AUTH */
-
 .auth-wrapper {
     min-height: 100vh;
     display: flex;
@@ -87,20 +80,14 @@ button {
     right: -50px;
 }
 
-.phone > * {
-    position: relative;
-    z-index: 1;
-}
+.phone > * { position: relative; z-index: 1; }
 
 .logo {
     text-align: center;
     margin-top: 90px;
 }
 
-.logo-icon {
-    font-size: 85px;
-    color: var(--green);
-}
+.logo-icon { font-size: 85px; color: var(--green); }
 
 .logo h1 {
     font-size: 43px;
@@ -108,14 +95,9 @@ button {
     margin-top: 10px;
 }
 
-.logo h1 span {
-    color: var(--light-green);
-}
+.logo h1 span { color: var(--light-green); }
 
-.tagline {
-    margin-top: 12px;
-    font-size: 18px;
-}
+.tagline { margin-top: 12px; font-size: 18px; }
 
 .city {
     height: 120px;
@@ -125,10 +107,7 @@ button {
     clip-path: polygon(0 65%,12% 50%,22% 65%,35% 38%,50% 60%,63% 35%,77% 60%,90% 30%,100% 55%,100% 100%,0 100%);
 }
 
-.auth-form {
-    width: 100%;
-    margin-top: 20px;
-}
+.auth-form { width: 100%; margin-top: 20px; }
 
 .input-box {
     width: 100%;
@@ -148,10 +127,7 @@ button {
     box-shadow: 0 0 0 3px #315d4215;
 }
 
-.input-box .icon {
-    font-size: 21px;
-    margin-right: 15px;
-}
+.input-box .icon { font-size: 21px; margin-right: 15px; }
 
 .input-box input {
     width: 100%;
@@ -162,10 +138,7 @@ button {
     color: var(--green);
 }
 
-.eye {
-    cursor: pointer;
-    color: #777;
-}
+.eye { cursor: pointer; color: #777; }
 
 .main-btn {
     width: 100%;
@@ -184,8 +157,7 @@ button {
     box-shadow: 0 7px 15px #173c2930;
 }
 
-.main-btn:disabled,
-.google-btn:disabled {
+.main-btn:disabled, .google-btn:disabled {
     opacity: .6;
     cursor: wait;
 }
@@ -199,15 +171,8 @@ button {
     color: #222;
 }
 
-.remember {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-}
-
-.remember input {
-    accent-color: var(--green);
-}
+.remember { display: flex; align-items: center; gap: 7px; }
+.remember input { accent-color: var(--green); }
 
 a {
     color: var(--green);
@@ -225,8 +190,7 @@ a {
     width: 100%;
 }
 
-.divider::before,
-.divider::after {
+.divider::before, .divider::after {
     content: "";
     flex: 1;
     height: 1px;
@@ -242,11 +206,7 @@ a {
     font-size: 16px;
 }
 
-.google-icon {
-    color: #4285f4;
-    font-weight: bold;
-    margin-right: 10px;
-}
+.google-icon { color: #4285f4; font-weight: bold; margin-right: 10px; }
 
 .bottom-text {
     margin-top: 25px;
@@ -254,13 +214,8 @@ a {
     color: #222;
 }
 
-.bottom-text a {
-    margin-left: 5px;
-}
-
-.signup {
-    display: none;
-}
+.bottom-text a { margin-left: 5px; }
+.signup { display: none; }
 
 .signup .top {
     width: 100%;
@@ -279,10 +234,7 @@ a {
     margin-bottom: 30px;
 }
 
-.signup h2 {
-    font-size: 32px;
-    margin-bottom: 12px;
-}
+.signup h2 { font-size: 32px; margin-bottom: 12px; }
 
 .signup .subtitle {
     font-size: 16px;
@@ -290,9 +242,7 @@ a {
     color: #555;
 }
 
-.signup .auth-form {
-    margin-top: 25px;
-}
+.signup .auth-form { margin-top: 25px; }
 
 .decoration {
     position: absolute;
@@ -305,11 +255,7 @@ a {
 }
 
 /* DASHBOARD */
-
-#dashboard {
-    display: none;
-    min-height: 100vh;
-}
+#dashboard { display: none; min-height: 100vh; }
 
 .sidebar {
     width: 255px;
@@ -331,9 +277,7 @@ a {
     padding: 8px 12px 35px;
 }
 
-.side-logo span {
-    color: #a4cf70;
-}
+.side-logo span { color: #a4cf70; }
 
 .nav-title {
     color: #b6c8b8;
@@ -355,20 +299,13 @@ a {
     font-size: 15px;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover, .nav-link.active {
     background: #315d42;
     color: white;
 }
 
-.nav-link .nav-icon {
-    font-size: 19px;
-    width: 23px;
-}
-
-.sidebar-bottom {
-    margin-top: auto;
-}
+.nav-link .nav-icon { font-size: 19px; width: 23px; }
+.sidebar-bottom { margin-top: auto; }
 
 .user-mini {
     border-top: 1px solid #ffffff25;
@@ -412,20 +349,9 @@ a {
     margin-bottom: 30px;
 }
 
-.topbar h1 {
-    font-size: 30px;
-}
-
-.topbar p {
-    color: var(--muted);
-    margin-top: 7px;
-}
-
-.top-actions {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
+.topbar h1 { font-size: 30px; }
+.topbar p { color: var(--muted); margin-top: 7px; }
+.top-actions { display: flex; gap: 10px; align-items: center; }
 
 .date-label {
     background: white;
@@ -436,18 +362,12 @@ a {
     font-size: 13px;
 }
 
-.content-section {
-    display: none;
-    animation: fadeIn .3s ease;
-}
-
-.content-section.active {
-    display: block;
-}
+.content-section { display: none; animation: fadeIn .3s ease; }
+.content-section.active { display: block; }
 
 @keyframes fadeIn {
-    from {opacity: 0; transform: translateY(8px);}
-    to {opacity: 1; transform: translateY(0);}
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .welcome-banner {
@@ -469,16 +389,8 @@ a {
     opacity: .18;
 }
 
-.welcome-banner h2 {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.welcome-banner p {
-    color: #e1eadf;
-    line-height: 1.6;
-    max-width: 550px;
-}
+.welcome-banner h2 { font-size: 25px; margin-bottom: 10px; }
+.welcome-banner p { color: #e1eadf; line-height: 1.6; max-width: 550px; }
 
 .stats-grid {
     display: grid;
@@ -487,9 +399,7 @@ a {
     margin-bottom: 25px;
 }
 
-.stat-card,
-.panel,
-.device-card {
+.stat-card, .panel, .device-card {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 18px;
@@ -497,12 +407,9 @@ a {
     box-shadow: 0 5px 15px #00000005;
 }
 
-.stat-card {
-    transition: .25s;
-}
+.stat-card { transition: .25s; }
 
-.stat-card:hover,
-.device-card:hover {
+.stat-card:hover, .device-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 9px 22px #183d2d12;
 }
@@ -518,19 +425,9 @@ a {
     margin-bottom: 15px;
 }
 
-.stat-card p {
-    color: var(--muted);
-    font-size: 13px;
-}
-
-.stat-card h2 {
-    font-size: 25px;
-    margin: 8px 0;
-}
-
-.stat-card small {
-    color: var(--muted);
-}
+.stat-card p { color: var(--muted); font-size: 13px; }
+.stat-card h2 { font-size: 25px; margin: 8px 0; }
+.stat-card small { color: var(--muted); }
 
 .two-columns {
     display: grid;
@@ -539,16 +436,8 @@ a {
     margin-bottom: 22px;
 }
 
-.panel h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.panel-subtitle {
-    color: var(--muted);
-    font-size: 13px;
-    margin-bottom: 20px;
-}
+.panel h3 { font-size: 18px; margin-bottom: 8px; }
+.panel-subtitle { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
 
 .section-heading {
     display: flex;
@@ -558,9 +447,7 @@ a {
     margin: 28px 0 16px;
 }
 
-.section-heading h2 {
-    font-size: 21px;
-}
+.section-heading h2 { font-size: 21px; }
 
 .small-btn {
     border: none;
@@ -571,9 +458,7 @@ a {
     font-weight: bold;
 }
 
-.small-btn:hover {
-    background: var(--green2);
-}
+.small-btn:hover { background: var(--green2); }
 
 .outline-btn {
     background: transparent;
@@ -590,9 +475,7 @@ a {
     gap: 16px;
 }
 
-.device-card {
-    transition: .25s;
-}
+.device-card { transition: .25s; }
 
 .device-top {
     display: flex;
@@ -619,21 +502,10 @@ a {
     color: #426c47;
 }
 
-.status.off {
-    background: #eeeeeb;
-    color: #777;
-}
+.status.off { background: #eeeeeb; color: #777; }
 
-.device-card h3 {
-    margin-bottom: 7px;
-    font-size: 17px;
-}
-
-.device-card p {
-    color: var(--muted);
-    font-size: 13px;
-    margin-bottom: 15px;
-}
+.device-card h3 { margin-bottom: 7px; font-size: 17px; }
+.device-card p { color: var(--muted); font-size: 13px; margin-bottom: 15px; }
 
 .device-metrics {
     display: flex;
@@ -643,11 +515,7 @@ a {
     font-size: 13px;
 }
 
-.device-actions {
-    display: flex;
-    gap: 8px;
-    margin-top: 15px;
-}
+.device-actions { display: flex; gap: 8px; margin-top: 15px; }
 
 .device-actions button {
     flex: 1;
@@ -660,8 +528,11 @@ a {
     font-weight: bold;
 }
 
-.device-actions button:hover {
-    background: var(--soft);
+.device-actions button:hover { background: var(--soft); }
+
+.device-actions .delete-btn {
+    color: #a52d2d;
+    border-color: #e8caca;
 }
 
 .progress-track {
@@ -687,11 +558,7 @@ a {
     color: var(--muted);
 }
 
-.energy-list {
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
-}
+.energy-list { display: flex; flex-direction: column; gap: 17px; }
 
 .energy-item {
     display: grid;
@@ -700,28 +567,12 @@ a {
     align-items: center;
 }
 
-.energy-item .energy-emoji {
-    font-size: 21px;
-}
-
-.energy-item small {
-    display: block;
-    color: var(--muted);
-    margin-top: 5px;
-    font-size: 12px;
-}
-
-.energy-item strong {
-    font-size: 13px;
-}
-
-.energy-item .progress-track {
-    margin: 7px 0 0;
-    height: 7px;
-}
+.energy-item .energy-emoji { font-size: 21px; }
+.energy-item small { display: block; color: var(--muted); margin-top: 5px; font-size: 12px; }
+.energy-item strong { font-size: 13px; }
+.energy-item .progress-track { margin: 7px 0 0; height: 7px; }
 
 /* ENERGY MAP */
-
 .map-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -754,26 +605,12 @@ a {
     background: var(--card);
 }
 
-.donut-center {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-
-.donut-center strong {
-    font-size: 24px;
-    display: block;
-}
-
-.donut-center small {
-    color: var(--muted);
-}
+.donut-center { position: relative; z-index: 1; text-align: center; }
+.donut-center strong { font-size: 24px; display: block; }
+.donut-center small { color: var(--muted); }
 
 /* FORMS */
-
-.field {
-    margin-bottom: 17px;
-}
+.field { margin-bottom: 17px; }
 
 .field label {
     display: block;
@@ -782,8 +619,7 @@ a {
     margin-bottom: 8px;
 }
 
-.field input,
-.field select {
+.field input, .field select {
     width: 100%;
     min-height: 47px;
     border: 1px solid var(--border);
@@ -794,10 +630,7 @@ a {
     color: var(--green);
 }
 
-.field input:focus,
-.field select:focus {
-    border-color: var(--green2);
-}
+.field input:focus, .field select:focus { border-color: var(--green2); }
 
 .form-grid {
     display: grid;
@@ -805,11 +638,7 @@ a {
     gap: 15px;
 }
 
-.detail-value {
-    font-size: 27px;
-    font-weight: bold;
-    margin: 10px 0;
-}
+.detail-value { font-size: 27px; font-weight: bold; margin: 10px 0; }
 
 .alert-card {
     display: flex;
@@ -833,24 +662,10 @@ a {
     font-size: 21px;
 }
 
-.alert-card p {
-    color: var(--muted);
-    font-size: 13px;
-    margin-top: 6px;
-    line-height: 1.5;
-}
+.alert-card p { color: var(--muted); font-size: 13px; margin-top: 6px; line-height: 1.5; }
 
-.empty-state {
-    text-align: center;
-    padding: 35px 15px;
-    color: var(--muted);
-}
-
-.empty-state span {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 12px;
-}
+.empty-state { text-align: center; padding: 35px 15px; color: var(--muted); }
+.empty-state span { font-size: 40px; display: block; margin-bottom: 12px; }
 
 .mobile-menu {
     display: none;
@@ -861,87 +676,68 @@ a {
     font-size: 20px;
 }
 
+/* PASSWORD RESET MODAL */
+.reset-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: #10251dcc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.reset-modal.hidden { display: none !important; }
+
+.reset-box {
+    width: 100%;
+    max-width: 440px;
+    background: var(--card);
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: 0 15px 50px #0003;
+}
+
+.reset-box h2 { margin-bottom: 9px; }
+.reset-box p { color: var(--muted); line-height: 1.5; margin-bottom: 20px; }
+.reset-box .field { margin-bottom: 14px; }
+
+.reset-close {
+    float: right;
+    border: 0;
+    background: transparent;
+    font-size: 25px;
+    color: var(--green);
+}
+
+.reset-box .main-btn { margin-top: 5px; }
+
 /* RESPONSIVE */
-
 @media(max-width: 1100px) {
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .device-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .main-area {
-        padding: 28px 25px;
-    }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .device-grid { grid-template-columns: repeat(2, 1fr); }
+    .main-area { padding: 28px 25px; }
 }
 
 @media(max-width: 850px) {
-    .auth-container {
-        grid-template-columns: 1fr;
-        max-width: 480px;
-    }
-
-    .phone {
-        min-height: 780px;
-    }
-
-    .sidebar {
-        transform: translateX(-100%);
-        transition: .3s;
-    }
-
-    .sidebar.open {
-        transform: translateX(0);
-    }
-
-    .main-area {
-        margin-left: 0;
-        padding: 22px 18px;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .two-columns,
-    .map-layout {
-        grid-template-columns: 1fr;
-    }
+    .auth-container { grid-template-columns: 1fr; max-width: 480px; }
+    .phone { min-height: 780px; }
+    .sidebar { transform: translateX(-100%); transition: .3s; }
+    .sidebar.open { transform: translateX(0); }
+    .main-area { margin-left: 0; padding: 22px 18px; }
+    .mobile-menu { display: block; }
+    .two-columns, .map-layout { grid-template-columns: 1fr; }
 }
 
 @media(max-width: 520px) {
-    .stats-grid,
-    .device-grid,
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .topbar h1 {
-        font-size: 23px;
-    }
-
-    .date-label {
-        display: none;
-    }
-
-    .welcome-banner {
-        padding: 23px 20px;
-    }
-
-    .welcome-banner::after {
-        right: 10px;
-        font-size: 65px;
-    }
-
-    .phone {
-        padding: 25px 23px;
-    }
-
-    .logo {
-        margin-top: 60px;
-    }
+    .stats-grid, .device-grid, .form-grid { grid-template-columns: 1fr; }
+    .topbar h1 { font-size: 23px; }
+    .date-label { display: none; }
+    .welcome-banner { padding: 23px 20px; }
+    .welcome-banner::after { right: 10px; font-size: 65px; }
+    .phone { padding: 25px 23px; }
+    .logo { margin-top: 60px; }
 }
 </style>
 </head>
@@ -964,7 +760,6 @@ a {
     <div class="city"></div>
 
     <form class="auth-form" onsubmit="loginUser(event)">
-
         <div class="input-box">
             <span class="icon">👤</span>
             <input type="email" id="loginEmail" placeholder="Email Address" required>
@@ -1002,9 +797,7 @@ a {
     <div class="decoration"></div>
 </section>
 
-
 <section class="phone signup" id="signup">
-
     <div class="top">
         <button class="back" onclick="showLogin()">←</button>
         <h2>Create Your Account</h2>
@@ -1015,7 +808,6 @@ a {
     </div>
 
     <form class="auth-form" onsubmit="signupUser(event)">
-
         <div class="input-box">
             <span class="icon">👤</span>
             <input type="text" id="signupName" placeholder="Full Name" required>
@@ -1028,17 +820,17 @@ a {
 
         <div class="input-box">
             <span class="icon">🔒</span>
-            <input type="password" id="signupPassword" placeholder="Password" required minlength="6">
+            <input type="password" id="signupPassword" placeholder="Password" required minlength="8">
             <span class="eye" onclick="togglePassword('signupPassword',this)">◉</span>
         </div>
 
         <div class="input-box">
             <span class="icon">🔒</span>
-            <input type="password" id="confirmPassword" placeholder="Confirm Password" required minlength="6">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required minlength="8">
             <span class="eye" onclick="togglePassword('confirmPassword',this)">◉</span>
         </div>
 
-        <button class="main-btn" id="signupButton" type="submit">Sign Up →</button>
+        <button class="main-btn" id="signupButton" type="submit">Create Account</button>
     </form>
 
     <div class="divider">OR</div>
@@ -1059,13 +851,44 @@ a {
 </div>
 </div>
 
+<!-- PASSWORD RESET -->
+<div class="reset-modal hidden" id="resetModal">
+    <div class="reset-box">
+        <button class="reset-close" onclick="closeResetModal()">×</button>
+        <h2>Reset Password</h2>
+        <p>Enter your email address. We will send you a verification code.</p>
+
+        <div id="resetStepEmail">
+            <div class="field">
+                <label>Email Address</label>
+                <input type="email" id="resetEmail" placeholder="Enter your email">
+            </div>
+            <button class="main-btn" id="sendCodeButton" onclick="sendResetCode()">Send Code</button>
+        </div>
+
+        <div id="resetStepCode" class="hidden">
+            <div class="field">
+                <label>Verification Code</label>
+                <input type="text" id="resetCode" maxlength="6" placeholder="Enter 6-digit code">
+            </div>
+            <div class="field">
+                <label>New Password</label>
+                <input type="password" id="newResetPassword" minlength="8" placeholder="New password">
+            </div>
+            <div class="field">
+                <label>Confirm New Password</label>
+                <input type="password" id="confirmResetPassword" minlength="8" placeholder="Repeat new password">
+            </div>
+            <button class="main-btn" id="changeResetPasswordButton" onclick="changePasswordWithCode()">Change Password</button>
+        </div>
+    </div>
+</div>
 
 <!-- MAIN DASHBOARD -->
 
 <div id="dashboard">
 
 <aside class="sidebar" id="sidebar">
-
     <div class="side-logo">Energy <span>Watch</span> 🌿</div>
 
     <div class="nav-title">MAIN MENU</div>
@@ -1092,7 +915,6 @@ a {
 
     <div class="sidebar-bottom">
         <div class="nav-title">ACCOUNT</div>
-
         <div class="nav-link" onclick="logoutUser()">
             <span class="nav-icon">↪</span> Log Out
         </div>
@@ -1105,9 +927,7 @@ a {
             </div>
         </div>
     </div>
-
 </aside>
-
 
 <main class="main-area">
 
@@ -1119,15 +939,12 @@ a {
                 <p id="pageSubtitle">Your energy overview</p>
             </div>
         </div>
-
         <div class="top-actions">
             <div class="date-label" id="todayDate"></div>
         </div>
     </header>
 
-
     <!-- HOME -->
-
     <section class="content-section active" id="home">
 
         <div class="welcome-banner">
@@ -1139,105 +956,88 @@ a {
         </div>
 
         <div class="stats-grid">
-
             <div class="stat-card">
                 <div class="stat-icon">⚡</div>
                 <p>Daily Energy Usage</p>
                 <h2 id="dailyUsage">0 kWh</h2>
-                <small>Estimated daily consumption</small>
+                <small>Actual sensor reading</small>
             </div>
 
             <div class="stat-card">
                 <div class="stat-icon">💰</div>
-                <p>Monthly Cost</p>
+                <p>Monthly Electricity Cost</p>
                 <h2 id="monthlyCost">0 EGP</h2>
-                <small>Estimated monthly cost</small>
+                <small>Based on actual sensor reading</small>
             </div>
 
             <div class="stat-card">
-                <div class="stat-icon">▣</div>
-                <p>Connected Devices</p>
+                <div class="stat-icon">🔌</div>
+                <p>My Devices</p>
                 <h2 id="deviceCount">0</h2>
-                <small>Devices in your account</small>
+                <small>Devices added to your account</small>
             </div>
 
             <div class="stat-card">
-                <div class="stat-icon">🌱</div>
+                <div class="stat-icon">🟢</div>
                 <p>Active Devices</p>
                 <h2 id="activeCount">0</h2>
-                <small>Currently marked as active</small>
+                <small>Devices marked as active</small>
             </div>
-
         </div>
 
         <div class="two-columns">
-
             <div class="panel">
-                <h3>Energy Consumption</h3>
-                <p class="panel-subtitle">Estimated daily energy by device</p>
-                <div id="homeEnergyList" class="energy-list"></div>
-            </div>
-
-            <div class="panel">
-                <h3>Monthly Budget</h3>
-                <p class="panel-subtitle">Your estimated spending progress</p>
-
-                <div class="detail-value" id="homeBudgetCost">0 EGP</div>
-
+                <h3>Energy Usage</h3>
+                <p class="panel-subtitle">Actual readings from your sensor</p>
+                <div class="detail-value" id="homeActualEnergy">0 kWh</div>
                 <div class="progress-track">
-                    <div class="progress-fill" id="homeBudgetProgress" style="width:0%"></div>
+                    <div class="progress-fill" id="homeEnergyProgress" style="width:0%"></div>
                 </div>
-
                 <div class="budget-line">
-                    <span id="homeBudgetUsed">Used: 0 EGP</span>
-                    <span id="homeBudgetLimit">Limit: 0 EGP</span>
+                    <span>Daily consumption</span>
+                    <strong id="homeEnergyStatus">Waiting for sensor</strong>
                 </div>
-
-                <br>
-                <button class="outline-btn" onclick="showPageById('budget')">
-                    Manage Budget →
-                </button>
             </div>
 
+            <div class="panel">
+                <h3>Sensor Status</h3>
+                <p class="panel-subtitle">Your Energy Watch hardware connection</p>
+                <div class="detail-value" id="sensorStatus">Not Connected</div>
+                <p class="panel-subtitle" id="sensorMessage">
+                    Connect your sensor to start receiving actual readings.
+                </p>
+            </div>
         </div>
 
         <div class="section-heading">
-            <h2>Your Devices</h2>
-            <button class="small-btn" onclick="showPageById('devices')">View All →</button>
+            <h2>My Devices</h2>
+            <button class="small-btn" onclick="showPageById('devices')">Manage Devices →</button>
         </div>
 
         <div class="device-grid" id="homeDeviceGrid"></div>
-
     </section>
 
-
     <!-- DEVICES -->
-
     <section class="content-section" id="devices">
-
         <div class="section-heading">
-            <div>
-                <h2>My Devices</h2>
-                <p class="panel-subtitle">Manage your connected appliances</p>
-            </div>
+            <h2>My Devices</h2>
+            <button class="small-btn" onclick="showAddDeviceForm()">+ Add Device</button>
         </div>
 
-        <div class="panel" style="margin-bottom:22px;">
+        <div class="panel hidden" id="addDevicePanel">
             <h3>Add New Device</h3>
-            <p class="panel-subtitle">Enter the device information to estimate its energy use.</p>
+            <p class="panel-subtitle">Add an appliance to your Energy Watch account</p>
 
             <form onsubmit="addDevice(event)">
-
                 <div class="form-grid">
-
                     <div class="field">
                         <label>Device Name</label>
-                        <input type="text" id="newDeviceName" placeholder="Example: Air Conditioner" required>
+                        <input type="text" id="deviceName" placeholder="Example: Living Room AC" required>
                     </div>
 
                     <div class="field">
                         <label>Device Type</label>
-                        <select id="newDeviceType">
+                        <select id="deviceType" required>
                             <option value="ac">Air Conditioner</option>
                             <option value="fridge">Refrigerator</option>
                             <option value="heater">Water Heater</option>
@@ -1249,227 +1049,185 @@ a {
 
                     <div class="field">
                         <label>Power (Watts)</label>
-                        <input type="number" id="newDeviceWatts" min="1" placeholder="Example: 1500" required>
+                        <input type="number" id="deviceWatts" min="1" placeholder="Example: 1500" required>
                     </div>
 
                     <div class="field">
-                        <label>Operating Hours Per Day</label>
-                        <input type="number" id="newDeviceHours" min="0" max="24" step="0.5" placeholder="Example: 3" required>
+                        <label>Expected Operating Hours Per Day</label>
+                        <input type="number" id="deviceHours" min="0" max="24" step="0.5" placeholder="Example: 3" required>
                     </div>
-
                 </div>
 
-                <button class="small-btn" type="submit">+ Add Device</button>
-
+                <button class="main-btn" type="submit">Save Device</button>
+                <button class="outline-btn" type="button" onclick="hideAddDeviceForm()" style="margin-top:10px;width:100%">Cancel</button>
             </form>
         </div>
 
         <div class="device-grid" id="allDeviceGrid"></div>
-
     </section>
 
-
     <!-- DEVICE DETAILS -->
-
     <section class="content-section" id="details">
-
-        <button class="outline-btn" onclick="showPageById('devices')">← Back to Devices</button>
-
         <div class="section-heading">
-            <div>
-                <h2 id="detailName">Device Details</h2>
-                <p class="panel-subtitle">Consumption and operating information</p>
-            </div>
-        </div>
-
-        <div class="stats-grid" style="grid-template-columns:repeat(3,1fr);">
-
-            <div class="stat-card">
-                <div class="stat-icon">⚡</div>
-                <p>Daily Consumption</p>
-                <h2 id="detailDaily">0 kWh</h2>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-icon">📅</div>
-                <p>Monthly Consumption</p>
-                <h2 id="detailMonthly">0 kWh</h2>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-icon">💰</div>
-                <p>Monthly Cost</p>
-                <h2 id="detailCost">0 EGP</h2>
-            </div>
-
+            <h2 id="detailsDeviceName">Device Details</h2>
+            <button class="outline-btn" onclick="showPageById('devices')">← Back to Devices</button>
         </div>
 
         <div class="panel">
-            <h3>Update Device Information</h3>
-            <p class="panel-subtitle">Change the estimated power and daily operating hours.</p>
-
             <form onsubmit="saveDeviceDetails(event)">
-
                 <div class="form-grid">
                     <div class="field">
                         <label>Device Name</label>
-                        <input type="text" id="editDeviceName" required>
+                        <input id="editDeviceName" required>
                     </div>
-
+                    <div class="field">
+                        <label>Device Type</label>
+                        <select id="editDeviceType">
+                            <option value="ac">Air Conditioner</option>
+                            <option value="fridge">Refrigerator</option>
+                            <option value="heater">Water Heater</option>
+                            <option value="washing">Washing Machine</option>
+                            <option value="lighting">Lighting</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
                     <div class="field">
                         <label>Power (Watts)</label>
                         <input type="number" id="editDeviceWatts" min="1" required>
                     </div>
-
                     <div class="field">
-                        <label>Operating Hours Per Day</label>
+                        <label>Expected Hours Per Day</label>
                         <input type="number" id="editDeviceHours" min="0" max="24" step="0.5" required>
-                    </div>
-
-                    <div class="field">
-                        <label>Device Status</label>
-                        <select id="editDeviceStatus">
-                            <option value="true">Active</option>
-                            <option value="false">Inactive</option>
-                        </select>
                     </div>
                 </div>
 
-                <button class="small-btn" type="submit">Save Changes</button>
+                <button class="main-btn" type="submit">Save Changes</button>
+            </form>
+
+            <div class="section-heading">
+                <h2>Actual Sensor Reading</h2>
+            </div>
+            <p class="panel-subtitle" id="deviceActualReading">
+                0 kWh — Waiting for sensor data.
+            </p>
+        </div>
+    </section>
+
+    <!-- ENERGY MAP -->
+    <section class="content-section" id="energyMap">
+        <div class="section-heading">
+            <h2>Energy Map</h2>
+        </div>
+
+        <div class="panel" style="margin-bottom:20px">
+            <h3>Set Your Target Monthly Electricity Bill</h3>
+            <p class="panel-subtitle">
+                Enter the amount you want your monthly electricity bill to be.
+                Energy Watch will estimate recommended operating hours for your devices.
+            </p>
+
+            <form onsubmit="saveTargetBill(event)">
+                <div class="field">
+                    <label>Target Monthly Bill (EGP)</label>
+                    <input type="number" id="targetBillInput" min="1" step="0.01" placeholder="Enter your target bill" required>
+                </div>
+                <button class="main-btn" type="submit">Calculate My Energy Plan</button>
             </form>
         </div>
 
-    </section>
-
-
-    <!-- ENERGY MAP -->
-
-    <section class="content-section" id="energyMap">
-
-        <div class="section-heading">
-            <div>
-                <h2>Energy Map</h2>
-                <p class="panel-subtitle">Understand how your devices contribute to total energy usage.</p>
-            </div>
-        </div>
-
         <div class="map-layout">
-
             <div class="panel">
-                <h3>Consumption Distribution</h3>
-                <p class="panel-subtitle">Daily energy consumption by device</p>
+                <h3>Target Energy Distribution</h3>
+                <p class="panel-subtitle">Estimated plan — not actual sensor readings</p>
 
                 <div class="donut-area">
                     <div class="donut" id="energyDonut">
                         <div class="donut-center">
-                            <strong id="mapTotal">0</strong>
-                            <small>kWh / day</small>
+                            <strong id="targetDailyKwh">0 kWh</strong>
+                            <small>Daily target</small>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="panel">
-                <h3>Device Breakdown</h3>
-                <p class="panel-subtitle">Share of total daily energy consumption</p>
-                <div id="mapBreakdown" class="energy-list"></div>
+                <h3>Recommended Device Hours</h3>
+                <p class="panel-subtitle">Suggested daily operating time based on your target bill</p>
+                <div class="energy-list" id="energyPlanList"></div>
             </div>
-
         </div>
 
-        <div class="panel" style="margin-top:20px;">
-            <h3>How is this calculated?</h3>
-            <p class="panel-subtitle" style="line-height:1.8;">
-                Estimated daily energy = (Power in Watts × Operating Hours) ÷ 1000.
-                The map updates when you add a device or change its information.
-                These are estimates based on the values entered, not direct sensor measurements.
+        <div class="panel" style="margin-top:20px">
+            <h3>Plan Information</h3>
+            <p class="panel-subtitle" id="energyPlanMessage">
+                Enter a target bill and set the electricity price in Budget Planner to calculate your plan.
             </p>
         </div>
-
     </section>
 
-
-    <!-- BUDGET PLANNER -->
-
+    <!-- BUDGET -->
     <section class="content-section" id="budget">
-
         <div class="section-heading">
-            <div>
-                <h2>Budget Planner</h2>
-                <p class="panel-subtitle">Plan your electricity spending.</p>
-            </div>
+            <h2>Budget Planner</h2>
         </div>
 
         <div class="two-columns">
-
             <div class="panel">
-                <h3>Budget Settings</h3>
-                <p class="panel-subtitle">Set your monthly budget and electricity price.</p>
+                <h3>Electricity Price Settings</h3>
+                <p class="panel-subtitle">Enter your electricity price per kWh and monthly budget.</p>
 
                 <form onsubmit="saveBudget(event)">
-
                     <div class="field">
                         <label>Monthly Budget (EGP)</label>
-                        <input type="number" id="budgetInput" min="1" required>
+                        <input type="number" id="budgetInput" min="0" step="0.01" required>
                     </div>
 
                     <div class="field">
-                        <label>Electricity Price (EGP per kWh)</label>
+                        <label>Price Per kWh (EGP)</label>
                         <input type="number" id="priceInput" min="0" step="0.01" required>
                     </div>
 
-                    <button class="small-btn" type="submit">Save Settings</button>
-
+                    <button class="main-btn" type="submit">Save Budget Settings</button>
                 </form>
             </div>
 
             <div class="panel">
-                <h3>Monthly Estimate</h3>
-                <p class="panel-subtitle">Based on your entered device information.</p>
-
-                <p style="color:var(--muted);font-size:13px;margin-top:20px;">Estimated Monthly Cost</p>
-                <div class="detail-value" id="budgetMonthlyCost">0 EGP</div>
-
-                <p style="color:var(--muted);font-size:13px;margin-top:20px;">Remaining Budget</p>
-                <div class="detail-value" id="budgetRemaining">0 EGP</div>
-
+                <h3>Actual Monthly Cost</h3>
+                <p class="panel-subtitle">Calculated only from actual sensor readings</p>
+                <div class="detail-value" id="budgetActualCost">0 EGP</div>
                 <div class="progress-track">
                     <div class="progress-fill" id="budgetProgress" style="width:0%"></div>
                 </div>
-
                 <div class="budget-line">
-                    <span id="budgetPercentage">0% used</span>
-                    <span id="budgetTotalLabel">Budget: 0 EGP</span>
+                    <span>Monthly budget</span>
+                    <strong id="budgetLimit">0 EGP</strong>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
     <!-- ALERTS -->
-
     <section class="content-section" id="alerts">
-
         <div class="section-heading">
-            <div>
-                <h2>Alerts & Notifications</h2>
-                <p class="panel-subtitle">Important updates about your energy usage.</p>
-            </div>
+            <h2>Alerts</h2>
         </div>
-
         <div id="alertsList"></div>
-
     </section>
 
 </main>
 </div>
 
-
 <script>
-/* BASIC AUTH SCREEN FUNCTIONS */
+function togglePassword(id, element) {
+    const input = document.getElementById(id);
+    if (input.type === "password") {
+        input.type = "text";
+        element.textContent = "◎";
+    } else {
+        input.type = "password";
+        element.textContent = "◉";
+    }
+}
 
 function showSignup() {
     document.getElementById("login").style.display = "none";
@@ -1479,18 +1237,6 @@ function showSignup() {
 function showLogin() {
     document.getElementById("signup").style.display = "none";
     document.getElementById("login").style.display = "flex";
-}
-
-function togglePassword(id, element) {
-    const input = document.getElementById(id);
-
-    if (input.type === "password") {
-        input.type = "text";
-        element.textContent = "◎";
-    } else {
-        input.type = "password";
-        element.textContent = "◉";
-    }
 }
 
 function toggleSidebar() {
@@ -1503,10 +1249,7 @@ function showPage(page, element) {
     });
 
     const target = document.getElementById(page);
-
-    if (target) {
-        target.classList.add("active");
-    }
+    if (target) target.classList.add("active");
 
     document.querySelectorAll(".nav-link").forEach(link => {
         link.classList.remove("active");
@@ -1525,14 +1268,13 @@ function showPage(page, element) {
         home: ["Dashboard", "Your energy overview"],
         devices: ["My Devices", "Manage your appliances"],
         details: ["Device Details", "View and update device information"],
-        energyMap: ["Energy Map", "Explore your energy distribution"],
+        energyMap: ["Energy Map", "Plan your target electricity bill"],
         budget: ["Budget Planner", "Manage your electricity budget"],
         alerts: ["Alerts", "Stay updated on your energy usage"]
     };
 
     document.getElementById("pageTitle").textContent = titles[page][0];
     document.getElementById("pageSubtitle").textContent = titles[page][1];
-
     document.getElementById("sidebar").classList.remove("open");
 }
 
@@ -1549,33 +1291,31 @@ document.getElementById("todayDate").textContent =
     });
 </script>
 
-
 <script type="module">
-
-import { initializeApp } from
-"https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js";
 
 import {
     getAuth,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
-    sendPasswordResetEmail,
     updateProfile,
     GoogleAuthProvider,
     signInWithPopup,
     onAuthStateChanged,
     signOut
-} from
-"https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js";
+} from "https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js";
 
 import {
     getDatabase,
     ref,
     set,
     get
-} from
-"https://www.gstatic.com/firebasejs/13.4.0/firebase-database.js";
+} from "https://www.gstatic.com/firebasejs/13.4.0/firebase-database.js";
 
+import {
+    getFunctions,
+    httpsCallable
+} from "https://www.gstatic.com/firebasejs/13.4.0/firebase-functions.js";
 
 /* FIREBASE CONFIG */
 
@@ -1592,13 +1332,14 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const database = getDatabase(app);
+const db = getDatabase(app);
+const functions = getFunctions(app, "europe-west1");
+
+const requestPasswordCode = httpsCallable(functions, "requestPasswordCode");
+const verifyPasswordCode = httpsCallable(functions, "verifyPasswordCode");
 
 const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({ prompt: "select_account" });
-
-
-/* APP DATA */
 
 let currentUser = null;
 let appData = null;
@@ -1606,38 +1347,16 @@ let selectedDeviceId = null;
 
 const defaultData = {
     settings: {
-        monthlyBudget: 1000,
-        pricePerKwh: 2.5
+        monthlyBudget: 0,
+        pricePerKwh: 0,
+        targetMonthlyBill: 0
     },
-    devices: {
-        ac: {
-            name: "Air Conditioner",
-            type: "ac",
-            watts: 1500,
-            hours: 3,
-            active: true
-        },
-        fridge: {
-            name: "Refrigerator",
-            type: "fridge",
-            watts: 200,
-            hours: 10,
-            active: true
-        },
-        heater: {
-            name: "Water Heater",
-            type: "heater",
-            watts: 2000,
-            hours: 1,
-            active: false
-        },
-        washing: {
-            name: "Washing Machine",
-            type: "washing",
-            watts: 500,
-            hours: 1,
-            active: false
-        }
+    devices: {},
+    sensor: {
+        connected: false,
+        actualDailyKwh: 0,
+        actualMonthlyKwh: 0,
+        deviceReadings: {}
     }
 };
 
@@ -1650,66 +1369,50 @@ const icons = {
     other: "🔌"
 };
 
-const colors = [
-    "#315d42",
-    "#8dbd5d",
-    "#b7c9a7",
-    "#dce6d1",
-    "#66866a",
-    "#a4bd8b",
-    "#c3d4b8"
-];
-
-
-/* HELPER FUNCTIONS */
-
-function escapeHTML(value) {
-    return String(value).replace(/[&<>"']/g, char => ({
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#039;"
-    })[char]);
-}
-
 function money(value) {
     return Number(value || 0).toLocaleString("en-US", {
         maximumFractionDigits: 2
     }) + " EGP";
 }
 
+function escapeHTML(value) {
+    return String(value ?? "").replace(/[&<>"']/g, character => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+    }[character]));
+}
+
 function getDevices() {
-    return Object.entries(appData.devices || {}).map(([id, device]) => ({
+    return Object.entries(appData?.devices || {}).map(([id, device]) => ({
         id,
         ...device
     }));
 }
 
-function dailyKwh(device) {
-    if (!device.active) return 0;
-    return (Number(device.watts) * Number(device.hours)) / 1000;
+function sensorConnected() {
+    return appData?.sensor?.connected === true;
 }
 
-function totalDailyKwh() {
-    return getDevices().reduce((sum, device) => sum + dailyKwh(device), 0);
+function actualDaily() {
+    if (!sensorConnected()) return 0;
+    return Number(appData.sensor.actualDailyKwh || 0);
 }
 
-function monthlyKwh() {
-    return totalDailyKwh() * 30;
+function actualMonthly() {
+    if (!sensorConnected()) return 0;
+    return Number(appData.sensor.actualMonthlyKwh || 0);
 }
 
-function monthlyCost() {
-    return monthlyKwh() * Number(appData.settings.pricePerKwh || 0);
+function actualCost() {
+    return actualMonthly() * Number(appData?.settings?.pricePerKwh || 0);
 }
 
-function saveAppData() {
-    if (!currentUser) return Promise.resolve();
-
-    return set(
-        ref(database, "users/" + currentUser.uid + "/energyWatch"),
-        appData
-    );
+async function saveAppData() {
+    if (!currentUser) throw new Error("No signed-in user.");
+    await set(ref(db, `users/${currentUser.uid}/energyWatch`), appData);
 }
 
 function showDashboard() {
@@ -1722,21 +1425,46 @@ function showAuth() {
     document.getElementById("authWrapper").style.display = "flex";
 }
 
+function mergeDefaults(savedData) {
+    const merged = {
+        ...structuredClone(defaultData),
+        ...(savedData || {})
+    };
 
-/* AUTHENTICATION */
+    merged.settings = {
+        ...defaultData.settings,
+        ...(savedData?.settings || {})
+    };
+
+    merged.devices = savedData?.devices || {};
+
+    merged.sensor = {
+        ...defaultData.sensor,
+        ...(savedData?.sensor || {}),
+        deviceReadings: savedData?.sensor?.deviceReadings || {}
+    };
+
+    return merged;
+}
+
+/* SIGN UP */
 
 window.signupUser = async function(event) {
     event.preventDefault();
 
     const button = document.getElementById("signupButton");
-
     const name = document.getElementById("signupName").value.trim();
     const email = document.getElementById("signupEmail").value.trim();
     const password = document.getElementById("signupPassword").value;
     const confirm = document.getElementById("confirmPassword").value;
 
+    if (password.length < 8) {
+        alert("Password must be at least 8 characters.");
+        return;
+    }
+
     if (password !== confirm) {
-        alert("Passwords do not match!");
+        alert("Passwords do not match.");
         return;
     }
 
@@ -1744,29 +1472,24 @@ window.signupUser = async function(event) {
     button.textContent = "Creating account...";
 
     try {
-        const result = await createUserWithEmailAndPassword(
-            auth, email, password
-        );
-
+        const result = await createUserWithEmailAndPassword(auth, email, password);
         await updateProfile(result.user, { displayName: name });
-
         alert("Your account has been created successfully!");
-
     } catch (error) {
         console.error(error);
         alert("Sign Up Error: " + error.message);
     } finally {
         button.disabled = false;
-        button.textContent = "Sign Up →";
+        button.textContent = "Create Account";
     }
 };
 
+/* LOGIN */
 
 window.loginUser = async function(event) {
     event.preventDefault();
 
     const button = document.getElementById("loginButton");
-
     const email = document.getElementById("loginEmail").value.trim();
     const password = document.getElementById("loginPassword").value;
 
@@ -1777,67 +1500,134 @@ window.loginUser = async function(event) {
         await signInWithEmailAndPassword(auth, email, password);
     } catch (error) {
         console.error(error);
-
-        if (error.code === "auth/invalid-credential") {
-            alert("Incorrect email or password.");
-        } else {
-            alert("Login Error: " + error.message);
-        }
+        alert("Login Error: " + error.message);
     } finally {
         button.disabled = false;
         button.textContent = "Log In →";
     }
 };
 
+/* GOOGLE LOGIN */
 
 window.googleLogin = async function() {
     try {
         await signInWithPopup(auth, googleProvider);
     } catch (error) {
         console.error(error);
-
-        if (error.code === "auth/popup-closed-by-user") {
-            alert("Google sign-in was cancelled.");
-        } else {
-            alert("Google Login Error: " + error.message);
-        }
+        alert("Google Login Error: " + error.message);
     }
 };
 
+/* FORGOT PASSWORD */
 
-window.forgotPassword = async function() {
+window.forgotPassword = function() {
     const email = document.getElementById("loginEmail").value.trim();
 
+    document.getElementById("resetModal").classList.remove("hidden");
+    document.getElementById("resetStepEmail").classList.remove("hidden");
+    document.getElementById("resetStepCode").classList.add("hidden");
+
+    if (email) {
+        document.getElementById("resetEmail").value = email;
+    }
+};
+
+window.closeResetModal = function() {
+    document.getElementById("resetModal").classList.add("hidden");
+};
+
+window.sendResetCode = async function() {
+    const email = document.getElementById("resetEmail").value.trim();
+    const button = document.getElementById("sendCodeButton");
+
     if (!email) {
-        alert("Please enter your email address first.");
+        alert("Please enter your email address.");
         return;
     }
 
+    button.disabled = true;
+    button.textContent = "Sending...";
+
     try {
-        await sendPasswordResetEmail(auth, email);
-        alert("Password reset email sent successfully!");
+        await requestPasswordCode({ email });
+
+        document.getElementById("resetStepEmail").classList.add("hidden");
+        document.getElementById("resetStepCode").classList.remove("hidden");
+
+        alert("If the account exists, a verification code has been sent to your email.");
     } catch (error) {
-        alert("Password Reset Error: " + error.message);
+        console.error(error);
+        alert("Could not send verification code. Please check your server function and try again.");
+    } finally {
+        button.disabled = false;
+        button.textContent = "Send Code";
     }
 };
 
+window.changePasswordWithCode = async function() {
+    const email = document.getElementById("resetEmail").value.trim();
+    const code = document.getElementById("resetCode").value.trim();
+    const newPassword = document.getElementById("newResetPassword").value;
+    const confirmPassword = document.getElementById("confirmResetPassword").value;
+    const button = document.getElementById("changeResetPasswordButton");
+
+    if (!/^\d{6}$/.test(code)) {
+        alert("Please enter the 6-digit verification code.");
+        return;
+    }
+
+    if (newPassword.length < 8) {
+        alert("Password must be at least 8 characters.");
+        return;
+    }
+
+    if (newPassword !== confirmPassword) {
+        alert("Passwords do not match.");
+        return;
+    }
+
+    button.disabled = true;
+    button.textContent = "Changing Password...";
+
+    try {
+        await verifyPasswordCode({
+            email,
+            code,
+            newPassword
+        });
+
+        alert("Your password has been changed successfully!");
+        closeResetModal();
+        showLogin();
+
+        document.getElementById("loginEmail").value = email;
+        document.getElementById("loginPassword").value = "";
+    } catch (error) {
+        console.error(error);
+        alert("Could not verify the code or change the password. Please check the code and try again.");
+    } finally {
+        button.disabled = false;
+        button.textContent = "Change Password";
+    }
+};
+
+/* LOGOUT */
 
 window.logoutUser = async function() {
     try {
         await signOut(auth);
-        appData = null;
         currentUser = null;
+        appData = null;
         showAuth();
-        showLogin();
     } catch (error) {
+        console.error(error);
         alert("Logout Error: " + error.message);
     }
 };
 
+/* AUTH STATE */
 
-/* AUTH STATE AND DATABASE LOADING */
-
-onAuthStateChanged(auth, async (user) => {
+onAuthStateChanged(auth, async user => {
     if (!user) {
         currentUser = null;
         appData = null;
@@ -1848,319 +1638,157 @@ onAuthStateChanged(auth, async (user) => {
     currentUser = user;
 
     try {
-        const userRef = ref(
-            database,
-            "users/" + user.uid + "/energyWatch"
-        );
-
-        const snapshot = await get(userRef);
+        const snapshot = await get(ref(db, `users/${user.uid}/energyWatch`));
 
         if (snapshot.exists()) {
-            appData = snapshot.val();
-
-            if (!appData.settings) {
-                appData.settings = {...defaultData.settings};
-            }
-
-            if (!appData.devices) {
-                appData.devices = {};
-            }
-
+            appData = mergeDefaults(snapshot.val());
         } else {
-            appData = JSON.parse(JSON.stringify(defaultData));
+            appData = structuredClone(defaultData);
             await saveAppData();
         }
 
-        showDashboard();
-        updateUserInfo();
-        renderEverything();
+        document.getElementById("userName").textContent =
+            user.displayName || "Energy Watch User";
 
+        document.getElementById("userEmail").textContent = user.email || "";
+
+        document.getElementById("userAvatar").textContent =
+            (user.displayName || user.email || "U").charAt(0).toUpperCase();
+
+        document.getElementById("welcomeMessage").textContent =
+            `Welcome to Energy Watch${user.displayName ? ", " + user.displayName : "!"}`;
+
+        showDashboard();
+        renderEverything();
     } catch (error) {
-        console.error("Database Error:", error);
-        alert("Could not load your data. Check your Firebase Database rules and internet connection.");
+        console.error(error);
+        alert("Could not load your account data. Please check your internet connection.");
     }
 });
 
-
-function updateUserInfo() {
-    const name = currentUser.displayName || "Energy Watch User";
-    const email = currentUser.email || "";
-
-    document.getElementById("userName").textContent = name;
-    document.getElementById("userEmail").textContent = email;
-    document.getElementById("userAvatar").textContent =
-        name.charAt(0).toUpperCase();
-
-    document.getElementById("welcomeMessage").textContent =
-        "Welcome, " + name + "!";
-}
-
-
-/* RENDER FUNCTIONS */
-
-function renderEverything() {
-    if (!appData) return;
-
-    renderHome();
-    renderDevices();
-    renderEnergyMap();
-    renderBudget();
-    renderAlerts();
-}
-
+/* HOME */
 
 function renderHome() {
     const devices = getDevices();
-    const total = totalDailyKwh();
-    const cost = monthlyCost();
+    const activeDevices = devices.filter(device => device.active);
 
     document.getElementById("dailyUsage").textContent =
-        total.toFixed(2) + " kWh";
+        actualDaily().toFixed(2) + " kWh";
 
     document.getElementById("monthlyCost").textContent =
-        money(cost);
+        money(actualCost());
 
-    document.getElementById("deviceCount").textContent =
-        devices.length;
+    document.getElementById("deviceCount").textContent = devices.length;
+    document.getElementById("activeCount").textContent = activeDevices.length;
 
-    document.getElementById("activeCount").textContent =
-        devices.filter(device => device.active).length;
+    document.getElementById("homeActualEnergy").textContent =
+        actualDaily().toFixed(2) + " kWh";
 
-    const budget = Number(appData.settings.monthlyBudget || 0);
-    const percentage = budget > 0 ? (cost / budget) * 100 : 0;
+    document.getElementById("homeEnergyProgress").style.width =
+        Math.min(actualDaily() * 10, 100) + "%";
 
-    document.getElementById("homeBudgetCost").textContent =
-        money(cost);
+    document.getElementById("homeEnergyStatus").textContent =
+        sensorConnected() ? "Sensor connected" : "Waiting for sensor";
 
-    document.getElementById("homeBudgetUsed").textContent =
-        "Used: " + money(cost);
+    document.getElementById("sensorStatus").textContent =
+        sensorConnected() ? "Connected" : "Not Connected";
 
-    document.getElementById("homeBudgetLimit").textContent =
-        "Limit: " + money(budget);
+    document.getElementById("sensorMessage").textContent =
+        sensorConnected()
+            ? "Your sensor is connected. Actual readings will appear here."
+            : "Connect your sensor to start receiving actual readings.";
 
-    document.getElementById("homeBudgetProgress").style.width =
-        Math.min(percentage, 100) + "%";
+    const grid = document.getElementById("homeDeviceGrid");
 
-    const list = document.getElementById("homeEnergyList");
-
-    const sorted = [...devices].sort(
-        (a, b) => dailyKwh(b) - dailyKwh(a)
-    );
-
-    if (sorted.length === 0) {
-        list.innerHTML = '<div class="empty-state">No devices added yet.</div>';
+    if (!devices.length) {
+        grid.innerHTML = `
+            <div class="panel empty-state" style="grid-column:1/-1">
+                <span>🔌</span>
+                <strong>No devices added yet</strong>
+                <p>Add your first device to start planning your energy usage.</p>
+            </div>`;
     } else {
-        const max = Math.max(...sorted.map(d => dailyKwh(d)), 0.01);
-
-        list.innerHTML = sorted.slice(0, 5).map(device => `
-            <div class="energy-item">
-                <span class="energy-emoji">${icons[device.type] || "🔌"}</span>
-                <div>
-                    <strong>${escapeHTML(device.name)}</strong>
-                    <div class="progress-track">
-                        <div class="progress-fill"
-                        style="width:${(dailyKwh(device)/max)*100}%"></div>
-                    </div>
-                </div>
-                <strong>${dailyKwh(device).toFixed(2)} kWh</strong>
-            </div>
-        `).join("");
+        grid.innerHTML = devices.slice(0, 3).map(device => deviceCardHTML(device)).join("");
     }
-
-    document.getElementById("homeDeviceGrid").innerHTML =
-        devices.slice(0, 3).map(deviceCardHTML).join("") ||
-        '<div class="empty-state">Add your first device from the Devices page.</div>';
 }
 
+/* DEVICE CARD */
 
 function deviceCardHTML(device) {
-    const usage = dailyKwh(device);
+    const icon = icons[device.type] || icons.other;
+    const reading = sensorConnected()
+        ? Number(appData.sensor.deviceReadings?.[device.id]?.dailyKwh || 0)
+        : 0;
 
     return `
         <div class="device-card">
             <div class="device-top">
-                <div class="device-emoji">${icons[device.type] || "🔌"}</div>
+                <div class="device-emoji">${icon}</div>
                 <span class="status ${device.active ? "" : "off"}">
-                    ${device.active ? "Active" : "Inactive"}
+                    ${device.active ? "Active" : "Off"}
                 </span>
             </div>
 
             <h3>${escapeHTML(device.name)}</h3>
-            <p>${Number(device.watts)} Watts • ${Number(device.hours)} hours/day</p>
+            <p>${escapeHTML(device.type || "Device")}</p>
 
             <div class="device-metrics">
-                <span>Daily usage</span>
-                <strong>${usage.toFixed(2)} kWh</strong>
+                <span>${Number(device.watts || 0)} W</span>
+                <span>${Number(device.hours || 0)} hrs/day</span>
             </div>
 
+            <p style="margin-top:12px;margin-bottom:0">
+                Actual reading: <strong>${reading.toFixed(2)} kWh</strong>
+            </p>
+
             <div class="device-actions">
-                <button onclick="openDeviceDetails('${escapeHTML(device.id)}')">Details</button>
                 <button onclick="toggleDevice('${escapeHTML(device.id)}')">
                     ${device.active ? "Turn Off" : "Turn On"}
                 </button>
+                <button onclick="openDeviceDetails('${escapeHTML(device.id)}')">
+                    Details
+                </button>
+                <button class="delete-btn" onclick="deleteDevice('${escapeHTML(device.id)}')">
+                    Delete
+                </button>
             </div>
-        </div>
-    `;
+        </div>`;
 }
 
+/* DEVICES */
 
 function renderDevices() {
     const devices = getDevices();
+    const grid = document.getElementById("allDeviceGrid");
 
-    document.getElementById("allDeviceGrid").innerHTML =
-        devices.map(deviceCardHTML).join("") ||
-        '<div class="empty-state"><span>🔌</span>No devices yet. Add your first device above.</div>';
-}
-
-
-function renderEnergyMap() {
-    const devices = getDevices();
-    const total = totalDailyKwh();
-
-    document.getElementById("mapTotal").textContent =
-        total.toFixed(2);
-
-    const activeDevices = devices.filter(d => dailyKwh(d) > 0);
-
-    if (total <= 0 || activeDevices.length === 0) {
-        document.getElementById("energyDonut").style.background = "#e9eee0";
-        document.getElementById("mapBreakdown").innerHTML =
-            '<div class="empty-state">Turn on a device and enter its operating hours to see your Energy Map.</div>';
+    if (!devices.length) {
+        grid.innerHTML = `
+            <div class="panel empty-state" style="grid-column:1/-1">
+                <span>🔌</span>
+                <strong>No devices added yet</strong>
+                <p>Click "Add Device" to add your appliances.</p>
+            </div>`;
         return;
     }
 
-    let currentAngle = 0;
-    const segments = [];
-
-    activeDevices.forEach((device, index) => {
-        const share = dailyKwh(device) / total;
-        const nextAngle = currentAngle + share * 360;
-
-        segments.push(
-            `${colors[index % colors.length]} ${currentAngle}deg ${nextAngle}deg`
-        );
-
-        currentAngle = nextAngle;
-    });
-
-    document.getElementById("energyDonut").style.background =
-        `conic-gradient(${segments.join(",")})`;
-
-    document.getElementById("mapBreakdown").innerHTML =
-        activeDevices.map((device, index) => {
-            const share = (dailyKwh(device) / total) * 100;
-
-            return `
-                <div class="energy-item">
-                    <span class="energy-emoji">${icons[device.type] || "🔌"}</span>
-                    <div>
-                        <strong>${escapeHTML(device.name)}</strong>
-                        <div class="progress-track">
-                            <div class="progress-fill"
-                            style="width:${share}%;background:${colors[index % colors.length]}"></div>
-                        </div>
-                        <small>${share.toFixed(1)}% of daily consumption</small>
-                    </div>
-                    <strong>${dailyKwh(device).toFixed(2)} kWh</strong>
-                </div>
-            `;
-        }).join("");
+    grid.innerHTML = devices.map(device => deviceCardHTML(device)).join("");
 }
 
+window.showAddDeviceForm = function() {
+    document.getElementById("addDevicePanel").classList.remove("hidden");
+};
 
-function renderBudget() {
-    const budget = Number(appData.settings.monthlyBudget || 0);
-    const price = Number(appData.settings.pricePerKwh || 0);
-    const cost = monthlyCost();
-
-    const remaining = budget - cost;
-    const percentage = budget > 0 ? (cost / budget) * 100 : 0;
-
-    document.getElementById("budgetInput").value = budget;
-    document.getElementById("priceInput").value = price;
-
-    document.getElementById("budgetMonthlyCost").textContent =
-        money(cost);
-
-    document.getElementById("budgetRemaining").textContent =
-        money(remaining);
-
-    document.getElementById("budgetProgress").style.width =
-        Math.min(percentage, 100) + "%";
-
-    document.getElementById("budgetPercentage").textContent =
-        percentage.toFixed(1) + "% used";
-
-    document.getElementById("budgetTotalLabel").textContent =
-        "Budget: " + money(budget);
-}
-
-
-function renderAlerts() {
-    const alerts = [];
-
-    const budget = Number(appData.settings.monthlyBudget || 0);
-    const cost = monthlyCost();
-
-    if (budget > 0 && cost > budget) {
-        alerts.push({
-            icon: "⚠️",
-            title: "Monthly Budget Exceeded",
-            text: "Your estimated monthly electricity cost is higher than your budget."
-        });
-    } else if (budget > 0 && cost >= budget * 0.8) {
-        alerts.push({
-            icon: "💡",
-            title: "Budget Almost Reached",
-            text: "Your estimated monthly cost has reached 80% of your budget."
-        });
-    }
-
-    const devices = getDevices();
-
-    devices.forEach(device => {
-        if (device.active && Number(device.hours) >= 8) {
-            alerts.push({
-                icon: "⏱️",
-                title: device.name + " Usage Notice",
-                text: "This device has a daily operating time of 8 hours or more. Review whether this matches your normal usage."
-            });
-        }
-    });
-
-    if (alerts.length === 0) {
-        document.getElementById("alertsList").innerHTML = `
-            <div class="panel empty-state">
-                <span>🌿</span>
-                <h3>Everything looks good!</h3>
-                <p>No alerts at the moment. Keep monitoring your energy usage.</p>
-            </div>
-        `;
-        return;
-    }
-
-    document.getElementById("alertsList").innerHTML =
-        alerts.map(alert => `
-            <div class="alert-card">
-                <div class="alert-icon">${alert.icon}</div>
-                <div>
-                    <strong>${escapeHTML(alert.title)}</strong>
-                    <p>${escapeHTML(alert.text)}</p>
-                </div>
-            </div>
-        `).join("");
-}
-
-
-/* DEVICE ACTIONS */
+window.hideAddDeviceForm = function() {
+    document.getElementById("addDevicePanel").classList.add("hidden");
+};
 
 window.addDevice = async function(event) {
     event.preventDefault();
 
-    const name = document.getElementById("newDeviceName").value.trim();
-    const type = document.getElementById("newDeviceType").value;
-    const watts = Number(document.getElementById("newDeviceWatts").value);
-    const hours = Number(document.getElementById("newDeviceHours").value);
+    const name = document.getElementById("deviceName").value.trim();
+    const type = document.getElementById("deviceType").value;
+    const watts = Number(document.getElementById("deviceWatts").value);
+    const hours = Number(document.getElementById("deviceHours").value);
 
     if (!name || watts <= 0 || hours < 0 || hours > 24) {
         alert("Please enter valid device information.");
@@ -2179,18 +1807,52 @@ window.addDevice = async function(event) {
 
     try {
         await saveAppData();
-        event.target.reset();
+        document.querySelector("#addDevicePanel form").reset();
+        hideAddDeviceForm();
         renderEverything();
         alert("Device added successfully!");
     } catch (error) {
         console.error(error);
+        delete appData.devices[id];
         alert("Could not save this device. Please try again.");
     }
 };
 
+/* DELETE DEVICE */
+
+window.deleteDevice = async function(id) {
+    const device = appData.devices?.[id];
+
+    if (!device) return;
+
+    const confirmed = confirm(`Are you sure you want to delete "${device.name}"?`);
+    if (!confirmed) return;
+
+    const oldDevice = { ...device };
+    delete appData.devices[id];
+
+    try {
+        await saveAppData();
+
+        if (selectedDeviceId === id) {
+            selectedDeviceId = null;
+            showPageById("devices");
+        }
+
+        renderEverything();
+        alert("Device deleted successfully!");
+    } catch (error) {
+        console.error(error);
+        appData.devices[id] = oldDevice;
+        renderEverything();
+        alert("Could not delete this device. Please try again.");
+    }
+};
+
+/* DEVICE ACTIONS */
 
 window.toggleDevice = async function(id) {
-    const device = appData.devices[id];
+    const device = appData.devices?.[id];
     if (!device) return;
 
     device.active = !device.active;
@@ -2200,78 +1862,224 @@ window.toggleDevice = async function(id) {
         renderEverything();
     } catch (error) {
         console.error(error);
+        device.active = !device.active;
+        renderEverything();
         alert("Could not update device status.");
     }
 };
 
-
 window.openDeviceDetails = function(id) {
-    const device = appData.devices[id];
+    const device = appData.devices?.[id];
     if (!device) return;
 
     selectedDeviceId = id;
 
-    document.getElementById("detailName").textContent = device.name;
+    document.getElementById("detailsDeviceName").textContent = device.name;
+    document.getElementById("editDeviceName").value = device.name || "";
+    document.getElementById("editDeviceType").value = device.type || "other";
+    document.getElementById("editDeviceWatts").value = device.watts || 0;
+    document.getElementById("editDeviceHours").value = device.hours || 0;
 
-    document.getElementById("editDeviceName").value = device.name;
-    document.getElementById("editDeviceWatts").value = device.watts;
-    document.getElementById("editDeviceHours").value = device.hours;
-    document.getElementById("editDeviceStatus").value =
-        String(device.active);
+    const reading = sensorConnected()
+        ? Number(appData.sensor.deviceReadings?.[id]?.dailyKwh || 0)
+        : 0;
 
-    const daily = dailyKwh(device);
-    const monthly = daily * 30;
-    const cost = monthly * Number(appData.settings.pricePerKwh || 0);
-
-    document.getElementById("detailDaily").textContent =
-        daily.toFixed(2) + " kWh";
-
-    document.getElementById("detailMonthly").textContent =
-        monthly.toFixed(2) + " kWh";
-
-    document.getElementById("detailCost").textContent =
-        money(cost);
+    document.getElementById("deviceActualReading").textContent =
+        `${reading.toFixed(2)} kWh — ${sensorConnected() ? "Actual sensor reading" : "Waiting for sensor data."}`;
 
     showPageById("details");
 };
-
 
 window.saveDeviceDetails = async function(event) {
     event.preventDefault();
 
     if (!selectedDeviceId || !appData.devices[selectedDeviceId]) return;
 
-    const name = document.getElementById("editDeviceName").value.trim();
-    const watts = Number(document.getElementById("editDeviceWatts").value);
-    const hours = Number(document.getElementById("editDeviceHours").value);
-    const active =
-        document.getElementById("editDeviceStatus").value === "true";
-
-    if (!name || watts <= 0 || hours < 0 || hours > 24) {
-        alert("Please enter valid information.");
-        return;
-    }
-
     const device = appData.devices[selectedDeviceId];
 
-    device.name = name;
-    device.watts = watts;
-    device.hours = hours;
-    device.active = active;
+    const oldDevice = { ...device };
+
+    device.name = document.getElementById("editDeviceName").value.trim();
+    device.type = document.getElementById("editDeviceType").value;
+    device.watts = Number(document.getElementById("editDeviceWatts").value);
+    device.hours = Number(document.getElementById("editDeviceHours").value);
+
+    if (!device.name || device.watts <= 0 || device.hours < 0 || device.hours > 24) {
+        Object.assign(device, oldDevice);
+        alert("Please enter valid device information.");
+        return;
+    }
 
     try {
         await saveAppData();
         renderEverything();
-        openDeviceDetails(selectedDeviceId);
-        alert("Device information updated!");
+        alert("Device details updated successfully!");
     } catch (error) {
         console.error(error);
-        alert("Could not save changes.");
+        Object.assign(device, oldDevice);
+        alert("Could not update device details.");
     }
 };
 
+/* ENERGY MAP PLAN */
 
-/* BUDGET ACTION */
+function calculateEnergyPlan() {
+    const devices = getDevices();
+    const targetBill = Number(appData.settings.targetMonthlyBill || 0);
+    const price = Number(appData.settings.pricePerKwh || 0);
+
+    const list = document.getElementById("energyPlanList");
+    const message = document.getElementById("energyPlanMessage");
+
+    document.getElementById("targetBillInput").value = targetBill || "";
+
+    if (!targetBill) {
+        document.getElementById("targetDailyKwh").textContent = "0 kWh";
+        document.getElementById("energyDonut").style.background =
+            "conic-gradient(#e4e8df 0deg 360deg)";
+        list.innerHTML = `<div class="empty-state">Enter your target monthly bill to calculate a plan.</div>`;
+        message.textContent = "Enter a target bill and set the electricity price in Budget Planner.";
+        return;
+    }
+
+    if (price <= 0) {
+        document.getElementById("targetDailyKwh").textContent = "—";
+        list.innerHTML = `<div class="empty-state">Please enter the electricity price per kWh in Budget Planner first.</div>`;
+        message.textContent = "The price per kWh is currently 0. Add the price in Budget Planner to calculate the target energy.";
+        return;
+    }
+
+    const dailyTargetKwh = targetBill / price / 30;
+
+    document.getElementById("targetDailyKwh").textContent =
+        dailyTargetKwh.toFixed(2) + " kWh";
+
+    if (!devices.length) {
+        list.innerHTML = `<div class="empty-state">Add devices first to calculate recommended operating hours.</div>`;
+        message.textContent =
+            `Your target bill of ${money(targetBill)} equals approximately ${dailyTargetKwh.toFixed(2)} kWh per day. Add your devices to divide this target between them.`;
+        return;
+    }
+
+    const baseline = devices.map(device => ({
+        ...device,
+        baselineKwh: (Number(device.watts || 0) * Number(device.hours || 0)) / 1000
+    }));
+
+    let totalBaseline = baseline.reduce((sum, device) => sum + device.baselineKwh, 0);
+
+    if (totalBaseline <= 0) {
+        totalBaseline = baseline.reduce((sum, device) => sum + Math.max(Number(device.watts || 0), 0), 0);
+    }
+
+    if (totalBaseline <= 0) {
+        list.innerHTML = `<div class="empty-state">Please check the power values of your devices.</div>`;
+        return;
+    }
+
+    let colors = ["#315d42", "#8dbd5d", "#b7c9a7", "#dce6d1", "#9aaa84", "#567b5b"];
+    let gradientParts = [];
+    let currentDegree = 0;
+
+    const plan = baseline.map((device, index) => {
+        const weight = device.baselineKwh > 0
+            ? device.baselineKwh
+            : (totalBaseline / devices.length);
+
+        const share = device.baselineKwh > 0
+            ? weight / totalBaseline
+            : (1 / devices.length);
+
+        const allocatedKwh = dailyTargetKwh * share;
+        const watts = Number(device.watts || 0);
+        const recommendedHours = watts > 0
+            ? Math.min(24, (allocatedKwh * 1000) / watts)
+            : 0;
+
+        const degrees = share * 360;
+        gradientParts.push(`${colors[index % colors.length]} ${currentDegree}deg ${currentDegree + degrees}deg`);
+        currentDegree += degrees;
+
+        return {
+            ...device,
+            share,
+            allocatedKwh,
+            recommendedHours
+        };
+    });
+
+    document.getElementById("energyDonut").style.background =
+        `conic-gradient(${gradientParts.join(",")})`;
+
+    list.innerHTML = plan.map((device, index) => `
+        <div class="energy-item">
+            <div class="energy-emoji">${icons[device.type] || icons.other}</div>
+            <div>
+                <strong>${escapeHTML(device.name)}</strong>
+                <small>${device.allocatedKwh.toFixed(2)} kWh/day · ${(device.share * 100).toFixed(1)}% of target</small>
+                <div class="progress-track">
+                    <div class="progress-fill" style="width:${Math.min(device.share * 100, 100)}%"></div>
+                </div>
+            </div>
+            <strong>${device.recommendedHours.toFixed(1)} hrs</strong>
+        </div>
+    `).join("");
+
+    const exceeds = plan.some(device => {
+        const rawHours = device.watts > 0
+            ? (device.allocatedKwh * 1000) / device.watts
+            : 0;
+        return rawHours > 24;
+    });
+
+    message.textContent =
+        `Your target bill of ${money(targetBill)} allows approximately ${dailyTargetKwh.toFixed(2)} kWh per day, using ${money(price)} per kWh. These are planning estimates, not actual sensor readings.` +
+        (exceeds ? " Some devices would need more than 24 hours per day at the current power settings. Review your device values or target bill." : "");
+}
+
+window.saveTargetBill = async function(event) {
+    event.preventDefault();
+
+    const targetBill = Number(document.getElementById("targetBillInput").value);
+
+    if (!Number.isFinite(targetBill) || targetBill <= 0) {
+        alert("Please enter a target monthly bill greater than 0.");
+        return;
+    }
+
+    appData.settings.targetMonthlyBill = targetBill;
+
+    try {
+        await saveAppData();
+        renderEverything();
+        alert("Your target monthly bill has been saved and the Energy Map plan updated.");
+    } catch (error) {
+        console.error(error);
+        alert("Could not save your target bill. Please try again.");
+    }
+};
+
+/* BUDGET */
+
+function renderBudget() {
+    document.getElementById("budgetInput").value =
+        appData.settings.monthlyBudget || 0;
+
+    document.getElementById("priceInput").value =
+        appData.settings.pricePerKwh || 0;
+
+    document.getElementById("budgetActualCost").textContent =
+        money(actualCost());
+
+    document.getElementById("budgetLimit").textContent =
+        money(appData.settings.monthlyBudget || 0);
+
+    const budget = Number(appData.settings.monthlyBudget || 0);
+    const cost = actualCost();
+
+    document.getElementById("budgetProgress").style.width =
+        budget > 0 ? Math.min((cost / budget) * 100, 100) + "%" : "0%";
+}
 
 window.saveBudget = async function(event) {
     event.preventDefault();
@@ -2279,7 +2087,7 @@ window.saveBudget = async function(event) {
     const budget = Number(document.getElementById("budgetInput").value);
     const price = Number(document.getElementById("priceInput").value);
 
-    if (budget <= 0 || price < 0) {
+    if (budget < 0 || price < 0) {
         alert("Please enter valid budget information.");
         return;
     }
@@ -2296,6 +2104,45 @@ window.saveBudget = async function(event) {
         alert("Could not save your budget settings.");
     }
 };
+
+/* ALERTS */
+
+function renderAlerts() {
+    const alerts = document.getElementById("alertsList");
+
+    if (!sensorConnected()) {
+        alerts.innerHTML = `
+            <div class="alert-card">
+                <div class="alert-icon">ℹ️</div>
+                <div>
+                    <strong>Sensor not connected</strong>
+                    <p>Actual electricity readings will appear after your sensor is connected and starts sending data.</p>
+                </div>
+            </div>`;
+        return;
+    }
+
+    alerts.innerHTML = `
+        <div class="alert-card">
+            <div class="alert-icon">⚡</div>
+            <div>
+                <strong>Sensor connected</strong>
+                <p>Your Energy Watch sensor is connected and actual readings are available.</p>
+            </div>
+        </div>`;
+}
+
+/* RENDER EVERYTHING */
+
+function renderEverything() {
+    if (!appData) return;
+
+    renderHome();
+    renderDevices();
+    renderBudget();
+    calculateEnergyPlan();
+    renderAlerts();
+}
 
 </script>
 
